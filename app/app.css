@@ -1,0 +1,131 @@
+﻿/*
+In NativeScript, the app.css file is where you place CSS rules that
+you would like to apply to your entire application. Check out
+http://docs.nativescript.org/ui/styling for a full list of the CSS
+selectors and properties you can use to style UI components.
+
+/*
+In many cases you may want to use the NativeScript core theme instead
+of writing your own CSS rules. For a full list of class names in the theme
+refer to http://docs.nativescript.org/ui/theme. 
+The imported CSS rules must precede all other types of rules.
+*/
+@import '~nativescript-theme-core/css/core.light.css';
+
+/*
+The following CSS rule changes the font size of all UI
+components that have the btn class name.
+*/
+.btn {
+  font-size: 18;
+}
+
+.fa-brands {
+  font-family: "fa-brands-400";
+}
+
+.fa-regular {
+  font-family: "fa-regular-400";
+}
+
+.fa-solid {
+  font-family: "fa-solid-900";
+}
+/* TODO: Doesnt seem to be working, find a way for icons to scale according to screen size
+@media screen and (max-width:240px) {
+  .fa-brands {
+    font-size: 12px;
+  }
+
+  .fa-regular {
+    font-size: 12px;
+  }
+
+  .fa-solid {
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 241px) and (max-width: 320px) {
+  .fa-brands {
+    font-size: 16px;
+  }
+
+  .fa-regular {
+    font-size: 16px;
+  }
+
+  .fa-solid {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 241px) and (max-width: 320px) {
+  .fa-brands {
+    font-size: 16px;
+  }
+
+  .fa-regular {
+    font-size: 16px;
+  }
+
+  .fa-solid {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 321px) and (max-width: 480px) {
+  .fa-brands {
+    font-size: 24px;
+  }
+
+  .fa-regular {
+    font-size: 24px;
+  }
+
+  .fa-solid {
+    font-size: 24px;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 600px) {
+  .fa-brands {
+    font-size: 32px;
+  }
+
+  .fa-regular {
+    font-size: 32px;
+  }
+
+  .fa-solid {
+    font-size: 32px;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 720px) {
+  .fa-brands {
+    font-size: 48px;
+  }
+
+  .fa-regular {
+    font-size: 48px;
+  }
+
+  .fa-solid {
+    font-size: 48px;
+  }
+}
+
+@media screen and (min-width: 721px) and (max-width: 800px) {
+  .fa-brands {
+    font-size: 64px; 
+  }
+
+  .fa-regular {
+    font-size: 64px; 
+  }
+
+  .fa-solid {
+    font-size: 64px; 
+  }
+} */

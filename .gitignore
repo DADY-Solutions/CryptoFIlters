@@ -1,0 +1,9 @@
+
+#Node.js related
+/node_modules
+
+#NativeScript related
+/platforms
+
+#VSCode related
+/.vscode

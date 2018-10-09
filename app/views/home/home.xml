@@ -1,4 +1,13 @@
-<Page
-  navigatingTo="onNavigatingTo">
-  <Label text="Welcome" />
+<Page 
+  loaded="onLoaded"
+  unloaded="onUnloaded">
+  <StackLayout>
+    <Label text="{{'Crypto Filter: ' + cryptoFilter}}" />
+    <TextField
+      text="{{cryptoFilter}}"
+      hint="Crypto..."
+      onFocus="onFocus"
+      onBlur="onBlur"
+    />
+  </StackLayout>
 </Page>

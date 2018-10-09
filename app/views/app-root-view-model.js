@@ -1,4 +1,4 @@
-const observableModule = require('tns-core-modules/data/observable')
+const Observable = require('tns-core-modules/data/observable')
 const {map} = require('lodash')
 
 const {sidemenuNavigation} = require('../constants')
@@ -10,7 +10,7 @@ const menuOptionsLabels = map(sidemenuNavigation, (option) => {
 })
 
 function AppRootViewModel() {
-  const viewModel = observableModule.fromObject({
+  const viewModel = Observable.fromObject({
     menuOptions: menuOptionsLabels,
   })
   return viewModel

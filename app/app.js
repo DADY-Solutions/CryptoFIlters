@@ -1,3 +1,3 @@
 const application = require('application')
 
-application.run({moduleName: 'app-root'})
+application.run({moduleName: 'views/app-root'})

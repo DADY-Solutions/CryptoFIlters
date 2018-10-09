@@ -16,7 +16,9 @@
     },
     "readme": "NativeScript Application",
     "dependencies": {
+        "lodash": "^4.17.11",
         "nativescript-theme-core": "~1.0.4",
+        "nativescript-ui-sidedrawer": "^4.3.0",
         "tns-core-modules": "~4.2.0"
     },
     "devDependencies": {

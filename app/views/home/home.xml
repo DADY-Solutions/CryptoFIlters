@@ -1,0 +1,4 @@
+<Page
+  navigatingTo="onNavigatingTo">
+  <Label text="Welcome" />
+</Page>

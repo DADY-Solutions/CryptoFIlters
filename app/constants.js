@@ -1,23 +1,33 @@
 const sidemenuNavigation = {
-  option1: {
-    label: 'Label1',
-    view: 'views/view1/view1'
+  home: {
+    label: 'Home',
+    value: 'home',
+    route: 'views/home/home'
   },
-  option2: {
-    label: 'Label2',
-    view: 'views/view2/view2'
+  recent: {
+    label: 'Recent Searches --- Coming soon!',
+    value: 'recent',
+    route: 'views/recent/recent-searches'
   },
-  option3: {
-    label: 'Label3',
-    view: 'views/view3/view3'
+  popular: {
+    label: 'Popular Searches --- Coming soon!',
+    value: 'popular',
+    route: 'views/popular/popular-searches'
   },
-  option4: {
-    label: 'Label4',
-    view: 'views/view4/view4'
+  other: {
+    label: 'Other People Searched --- Coming soon!',
+    value: 'other',
+    route: 'views/other/other-searches'
   },
-  option5: {
-    label: 'Label5',
-    view: 'views/view5/view5'
+  bookmarks: {
+    label: 'Bookmarks --- Coming soon!',
+    value: 'bookmarks',
+    route: 'views/bookmarks/bookmarks'
+  },
+  aboutus: {
+    label: 'About Us --- Coming soon!',
+    value: 'aboutus',
+    route: 'views/aboutus/aboutus'
   },
 }
 

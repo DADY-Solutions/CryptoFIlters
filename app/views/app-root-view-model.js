@@ -3,15 +3,16 @@ const {map} = require('lodash')
 
 const {sidemenuNavigation} = require('../constants')
 
-const menuOptionsLabels = map(sidemenuNavigation, (option) => {
+const menuOptionsArray = map(sidemenuNavigation, (option) => {
   return {
     label: option.label,
+    route: option.route,
   }
 })
 
 function AppRootViewModel() {
   const viewModel = Observable.fromObject({
-    menuOptions: menuOptionsLabels,
+    menuOptions: menuOptionsArray,
   })
   return viewModel
 }

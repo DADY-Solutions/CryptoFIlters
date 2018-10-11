@@ -26,7 +26,7 @@
   </nsDrawer:RadSideDrawer.drawerContent>
 
   <nsDrawer:RadSideDrawer.mainContent>
-    <Frame 
+    <Frame
       defaultPage="views/home/home">
     </Frame>
   </nsDrawer:RadSideDrawer.mainContent>

@@ -1,6 +1,17 @@
 <Page 
   loaded="onLoaded"
   unloaded="onUnloaded">
+  <Page.actionBar>
+  <!-- TODO: Make this dynamic - get from viewmodel -->
+    <ActionBar class="action-bar" title="Home">
+      <android> 
+        <NavigationButton icon="res://menu" tap="toggleNavigationDrawer" />
+      </android>
+      <ios>
+        <ActionItem icon="res://menu" tap="toggleNavigationDrawer" ios.position="left" />
+      </ios>
+    </ActionBar>
+  </Page.actionBar>
   <StackLayout>
     <Label text="{{'Crypto Filter: ' + cryptoFilter}}" />
     <TextField

@@ -1,4 +1,7 @@
+//TODO: When navigating away from this page, clear filters. Later on implement a user setting where the user can toggle to clear or not the filters
+//FIXME: When navigating to home page, the bindings do not work!
 const Observable = require('tns-core-modules/data/observable').Observable
+const application = require('tns-core-modules/application')
 
 const HomeViewModel = require('./home-view-model')
 
@@ -16,5 +19,11 @@ function onUnloaded() {
   viewModel.off(Observable.propertyChangeEvent, homeViewListener)
 }
 
+function toggleNavigationDrawer() {
+  application.getRootView().showDrawer()
+  console.log('NavigationDrawer triggered') //eslint-disable-line no-console
+}
+
 exports.onLoaded = onLoaded
 exports.onUnloaded = onUnloaded
+exports.toggleNavigationDrawer = toggleNavigationDrawer

@@ -24,6 +24,12 @@ const sidemenuNavigation = {
     value: 'bookmarks',
     route: 'views/bookmarks/bookmarks'
   },
+  // TODO: Idea by @MichalisGeorgiou for future plans
+  // portfolio: {
+  //   label: 'Portfolio --- Coming soon!',
+  //   value: 'portfolio',
+  //   route: 'views/portfolio/portfolio'
+  // },
   aboutus: {
     label: 'About Us --- Coming soon!',
     value: 'aboutus',

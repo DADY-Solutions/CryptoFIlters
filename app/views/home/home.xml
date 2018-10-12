@@ -1,6 +1,7 @@
-<Page 
+<Page
   loaded="onLoaded"
   unloaded="onUnloaded">
+
   <Page.actionBar>
   <!-- TODO: Make this dynamic - get from viewmodel -->
     <ActionBar class="action-bar" title="Home">

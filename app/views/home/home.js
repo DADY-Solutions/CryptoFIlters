@@ -6,17 +6,19 @@ const application = require('tns-core-modules/application')
 const HomeViewModel = require('./home-view-model')
 
 const viewModel = new HomeViewModel()
-const homeViewListener = viewModel.on(Observable.propertyChangeEvent, (args) => {
-  viewModel.set('cryptoFilter', args.value)
-})
 
 function onLoaded(args) {
+  console.log('Home loaded event') //eslint-disable-line no-console
   const page = args.object
   page.bindingContext = viewModel
+  viewModel.on(Observable.propertyChangeEvent, (args) => {
+    viewModel.set(`${args.propertyName}`, args.value)
+  })
 }
 
 function onUnloaded() {
-  viewModel.off(Observable.propertyChangeEvent, homeViewListener)
+  console.log('Home unloaded event') //eslint-disable-line no-console
+  viewModel.off(Observable.propertyChangeEvent)
 }
 
 function toggleNavigationDrawer() {

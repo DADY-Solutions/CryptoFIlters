@@ -16,6 +16,8 @@
     },
     "readme": "NativeScript Application",
     "dependencies": {
+        "bluebird": "^3.5.2",
+        "kinvey-nativescript-sdk": "^3.12.1",
         "lodash": "^4.17.11",
         "nativescript-theme-core": "~1.0.4",
         "nativescript-ui-sidedrawer": "^4.3.0",
